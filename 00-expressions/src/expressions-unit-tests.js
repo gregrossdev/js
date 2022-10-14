@@ -91,6 +91,18 @@ describe('Expressions', () => {
                 teenSum(13, 2).should.equal(19);
             });
         });
+
+        describe("teaParty()", () => {
+            it("(6, 8) should equal 1", () => {
+                teaParty(6, 8).should.equal(1);
+            });
+            it("(3, 8) should equal 0", () => {
+                teaParty(3, 8).should.equal(0);
+            });
+            it("(20, 6) should equal 2", () => {
+                teaParty(20, 6).should.equal(2);
+            });
+        });
     });
 
 });
