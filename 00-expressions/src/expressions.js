@@ -137,3 +137,34 @@ function sortaSum(a, b)
 
     return (sum >= 10 && sum <= 19) ? 20 : sum;
 }
+
+/**
+ * teenSum(3, 4) → 7
+ * teenSum(10, 13) → 19
+ * teenSum(13, 2) → 19
+ *
+ * @param {number} a
+ * @param {number} b
+ * @returns {number}
+ *      sum parameters
+ *      if either parameter is in range 13 - 19 return 19
+ *      else return sum
+ */
+function teenSum(a, b)
+{
+    let sum = a + b;
+    return (a >= 13 && a <= 19) || (b >= 13 && b <= 19) ? 19 : sum;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -79,6 +79,18 @@ describe('Expressions', () => {
                 sortaSum(10, 11).should.equal(21);
             });
         });
+
+        describe("teenSum()", () => {
+            it("(3, 4) should equal 7", () => {
+                teenSum(3, 4).should.equal(7);
+            });
+            it("(10, 13) should equal 19", () => {
+                teenSum(10, 13).should.equal(19);
+            });
+            it("(13, 2) should equal 19", () => {
+                teenSum(13, 2).should.equal(19);
+            });
+        });
     });
 
 });
