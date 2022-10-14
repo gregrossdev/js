@@ -99,3 +99,22 @@ function max1020(a, b)
 
     return a > b ? a : b;
 }
+
+/**
+ * dateFashion(5, 10) → 2
+ * dateFashion(5, 2) → 0
+ * dateFashion(5, 5) → 1
+ *
+ * @param {number} you
+ * @param {number} date
+ * @return {number}
+ *      if both parameters are 8 or more return 2
+ *      else if both parameters are 2 or less return 0
+ *      else return 0
+ */
+function dateFashion(you, date)
+{
+    if (you >= 8 || date >= 8) return 2;
+    else if (you <= 2 || date <= 2) return 0;
+    else return 1;
+}

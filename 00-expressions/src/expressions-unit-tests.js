@@ -55,6 +55,18 @@ describe('Expressions', () => {
                 max1020(11, 9).should.equal(11);
             });
         });
+
+        describe("dateFashion()", () => {
+            it("(5, 10) should equal 2", () => {
+                dateFashion(5, 10).should.equal(2);
+            });
+            it("(5, 2) should equal 0", () => {
+                dateFashion(5, 2).should.equal(0);
+            });
+            it("(5, 5) should equal 1", () => {
+                dateFashion(5, 5).should.equal(1);
+            });
+        });
     });
 
 });
