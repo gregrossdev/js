@@ -67,6 +67,18 @@ describe('Expressions', () => {
                 dateFashion(5, 5).should.equal(1);
             });
         });
+
+        describe("sortaSum()", () => {
+            it("(3, 4) should equal 7", () => {
+                sortaSum(3, 4).should.equal(7);
+            });
+            it("(9, 4) should equal 20", () => {
+                sortaSum(9, 4).should.equal(20);
+            });
+            it("(10, 11) should equal 21", () => {
+                sortaSum(10, 11).should.equal(21);
+            });
+        });
     });
 
 });

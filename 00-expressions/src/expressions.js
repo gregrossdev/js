@@ -118,3 +118,22 @@ function dateFashion(you, date)
     else if (you <= 2 || date <= 2) return 0;
     else return 1;
 }
+
+/**
+ * sortaSum(3, 4) → 7
+ * sortaSum(9, 4) → 20
+ * sortaSum(10, 11) → 21
+ *
+ * @param {number} a
+ * @param {number} b
+ * @returns {number}
+ *      sum parameters
+ *      if sum is in range 10 - 19 return 20
+ *      else return sum
+ */
+function sortaSum(a, b)
+{
+    let sum = a + b;
+
+    return (sum >= 10 && sum <= 19) ? 20 : sum;
+}
