@@ -31,6 +31,30 @@ describe('Expressions', () => {
                 diff21(-10).should.equal(31);
             });
         });
+
+        describe("intMax()", () => {
+            it("(1, 2, 3) should equal 3", () => {
+                intMax(1, 2, 3).should.equal(3);
+            });
+            it("(1, 3, 2) should equal 3", () => {
+                intMax(1, 3, 2).should.equal(3);
+            });
+            it("(3, 2, 1) should equal 3", () => {
+                intMax(3, 2, 1).should.equal(3);
+            });
+        });
+
+        describe("max1020()", () => {
+            it("(11, 19) should equal 19", () => {
+                max1020(11, 19).should.equal(19);
+            });
+            it("(19, 11) should equal 19", () => {
+                max1020(19, 11).should.equal(19);
+            });
+            it("(11, 9) should equal 11", () => {
+                max1020(11, 9).should.equal(11);
+            });
+        });
     });
 
 });
