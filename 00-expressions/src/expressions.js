@@ -163,7 +163,7 @@ function teenSum(a, b)
  *
  * @param {number} tea
  * @param {number} candy
- * @return {number}
+ * @returns {number}
  *      return outcome as 0=bad, 1=good, or 2=great
  *      if both parameters are at least 5 return 1
  *      if one parameter is double the amount of the other return 2
@@ -176,7 +176,30 @@ function teaParty(tea, candy)
     else return 1;
 }
 
+/**
+ * loneSum(1, 2, 3) → 6
+ * loneSum(3, 2, 3) → 2
+ * loneSum(3, 3, 3) → 0
+ *
+ * @param {number} a
+ * @param {number} b
+ * @param {number} c
+ * @returns {number}
+ *      sum parameters
+ *      if any of the parameters are the same value exclude from sum
+ */
+function loneSum(a, b, c)
+{
+    let sum = 0;
+    if (a != b && a != c)
+        sum += a;
+    if (b != a && b != c)
+        sum += b;
+    if (c != a && c != b)
+        sum += c;
 
+    return sum;
+}
 
 
 

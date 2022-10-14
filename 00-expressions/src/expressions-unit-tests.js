@@ -103,6 +103,18 @@ describe('Expressions', () => {
                 teaParty(20, 6).should.equal(2);
             });
         });
+
+        describe("loneSum()", () => {
+            it("(1, 2, 3) should equal 6", () => {
+                loneSum(1, 2, 3).should.equal(6);
+            });
+            it("(3, 2, 3) should equal 2", () => {
+                loneSum(3, 2, 3).should.equal(2);
+            });
+            it("(3, 3, 3) should equal 0", () => {
+                loneSum(3, 3, 3).should.equal(0);
+            });
+        });
     });
 
 });
