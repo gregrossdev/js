@@ -115,6 +115,24 @@ describe('Expressions', () => {
                 loneSum(3, 3, 3).should.equal(0);
             });
         });
+
+        describe("luckySum()", () => {
+            it("(1, 2, 3) should equal 6", () => {
+                luckySum(1, 2, 3).should.equal(6);
+            });
+            it("(1, 2, 13) should equal 3", () => {
+                luckySum(1, 2, 13).should.equal(3);
+            });
+            it("(1, 13, 3) should equal 1", () => {
+                luckySum(1, 13, 3).should.equal(1);
+            });
+            it("(13, 1, 3) should equal 3", () => {
+                luckySum(13, 1, 3).should.equal(3);
+            });
+            it("(13, 13, 13) should equal 0", () => {
+                luckySum(13, 13, 13).should.equal(0);
+            });
+        });
     });
 
 });

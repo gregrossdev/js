@@ -201,7 +201,32 @@ function loneSum(a, b, c)
     return sum;
 }
 
+/**
+ * luckySum(1, 2, 3) → 6
+ * luckySum(1, 2, 13) → 3
+ * luckySum(1, 13, 3) → 1
+ * luckySum(13, 1, 3) → 3
+ * luckySum(13, 13, 3) → 0
+ *
+ * @param {number} a
+ * @param {number} b
+ * @param {number} c
+ * @returns {number}
+ *      sum parameters
+ *      if any parameter is a 13 then exclude that value and the next value from the sum
+ */
+function luckySum(a, b, c)
+{
+    let sum = 0;
+    if (a != 13)
+        sum += a;
+    if (a != 13 && b != 13)
+        sum += b;
+    if (b != 13 && c != 13)
+        sum += c;
 
+    return sum;
+}
 
 
 
